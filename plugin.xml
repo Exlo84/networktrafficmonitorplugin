@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="NetworkTrafficMonitorPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>NetworkTrafficMonitorPlugin</name>
+    <description>Network Traffic Monitor Plugin for Android</description>
+    <author email="exlo@live.no" href="https://github.com/Exlo84">Exlo</author>
+    <license>MIT</license>
+    <keywords>cordova, network, traffic, monitor</keywords>
+
+    <platform name="android">
+        <js-module src="www/NetworkTrafficMonitorPlugin.js" name="NetworkTrafficMonitorPlugin">
+            <clobbers target="window.NetworkTrafficMonitorPlugin" />
+        </js-module>
+        <source-file src="src/android/NetworkTrafficMonitorPlugin.java" target-dir="src/com/exlo/networktrafficmonitorplugin" />
+    </platform>
+</plugin>
